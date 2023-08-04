@@ -26,12 +26,6 @@ export default function Register(props) {
         <Card.Body>
           <h2>Register</h2>
           <p>Please register using the form below to create an account:</p>
-          {warnError && (
-            <>
-              <br />
-              <Alert variant="danger">{warnError}</Alert>
-            </>
-          )}
         </Card.Body>
       </Card>
       <br />
@@ -62,6 +56,12 @@ export default function Register(props) {
             onChange={(e) => setPassword2(e.target.value)}
           />
         </Form.Group>
+        {warnError && (
+          <>
+            <br />
+            <Alert variant="danger">{warnError}</Alert>
+          </>
+        )}
         <br />
         <Button variant="dark" className="pull-right" type="submit">
           Register

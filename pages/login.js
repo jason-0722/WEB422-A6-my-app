@@ -36,12 +36,6 @@ export default function Login(props) {
         <Card.Body>
           <h2>Login</h2>
           <p>Please enter your login information in the form below:</p>
-          {warnError && (
-            <>
-              <br />
-              <Alert variant="danger">{warnError}</Alert>
-            </>
-          )}
         </Card.Body>
       </Card>
       <br />
@@ -63,6 +57,12 @@ export default function Login(props) {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
+        {warnError && (
+          <>
+            <br />
+            <Alert variant="danger">{warnError}</Alert>
+          </>
+        )}
         <br />
         <Button variant="dark" className="pull-right" type="submit">
           Login
