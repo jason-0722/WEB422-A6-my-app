@@ -7,7 +7,7 @@
  *  Name: Jason Shin
  *  Student ID: 111569216
  *  Date: Aug 04, 2023
- *  Deploy Link: a6-my-8sipgkfb7-classick93.vercel.app
+ *  Deploy Link: https://a6-my-app.vercel.app/
  ******************************************************************************/
 
 import React from "react";
